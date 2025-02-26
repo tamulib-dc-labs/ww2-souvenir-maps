@@ -211,7 +211,7 @@ const Map: React.FC<MapProps> = ({ manifests }) => {
                   key={index}
                 >
                   <Popup className="canopy-map-popup">
-                    <MDXCard iiifContent={item.id} label={getLabel(feature?.properties?.label[0])} />
+                    <MDXCard iiifContent={item.id} label={getLabel(feature?.properties?.label)} />
                   </Popup>
                 </Marker>
               ))
