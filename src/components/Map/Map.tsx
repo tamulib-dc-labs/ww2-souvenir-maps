@@ -25,7 +25,6 @@ import { headerHeight } from "@src/styles/global";
 
 // Added back to support labels from navPlace
 import { getLabel } from "@hooks/getLabel";
-import { InternationalString } from "@iiif/presentation-3";
 
 interface MapProps {
   manifests: any;
@@ -212,7 +211,7 @@ const Map: React.FC<MapProps> = ({ manifests }) => {
                   key={index}
                 >
                   <Popup className="canopy-map-popup">
-                    <MDXCard iiifContent={item.id} label={getLabel(feature?.properties?.label)} />
+                    <MDXCard iiifContent={item.id} label={getLabel(feature?.properties?.label[0])} />
                   </Popup>
                 </Marker>
               ))
