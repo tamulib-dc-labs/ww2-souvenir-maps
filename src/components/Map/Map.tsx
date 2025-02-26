@@ -207,7 +207,7 @@ const Map: React.FC<MapProps> = ({ manifests }) => {
                     feature.geometry.coordinates[1],
                     feature.geometry.coordinates[0],
                   ]}
-                  icon={MarkerIcon(item.thumbnail[0].id)}
+                  icon={MarkerIcon(item.thumbnail[0].id, getLabel(feature?.properties?.label))}
                   key={index}
                 >
                   <Popup className="canopy-map-popup">
