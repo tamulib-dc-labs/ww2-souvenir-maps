@@ -132,7 +132,7 @@ const Map: React.FC<MapProps> = ({ manifests }) => {
       <MapContainer
         className={"map-container"}
         bounds={bounds}
-        scrollWheelZoom={false}
+        scrollWheelZoom={true}
         zoomControl={false}
         ref={mapRef}
       >
