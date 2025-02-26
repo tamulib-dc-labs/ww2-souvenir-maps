@@ -4,18 +4,24 @@ import Card from "@components/Card/Card";
 import { MDXCardStyled } from "@components/MDX/Card.styled.ts";
 import { canopyManifests } from "@lib/constants/canopy";
 
-const MDXCard = ({ iiifContent }: { iiifContent: string }) => {
+interface MDXCardProps {
+  iiifContent?: string;
+  label?: string; // Optional label prop
+}
+
+const MDXCard = ({ iiifContent, label }: MDXCardProps) => {
   const [resource, setResource] = useState<any>();
   const manifests = canopyManifests();
 
   useEffect(() => {
-    const item = manifests.find((manifest) => manifest.id === iiifContent);
+    if (!iiifContent) return;
 
+    const item = manifests.find((manifest) => manifest.id === iiifContent);
     if (item)
       setResource({
         id: iiifContent,
         type: "Manifest",
-        label: item.label,
+        label: label || item.label,
         thumbnail: item.thumbnail,
         homepage: [
           {
@@ -25,7 +31,7 @@ const MDXCard = ({ iiifContent }: { iiifContent: string }) => {
           },
         ],
       });
-  }, [iiifContent]);
+  }, [iiifContent, label, manifests]);
 
   if (!resource) return null;
 
