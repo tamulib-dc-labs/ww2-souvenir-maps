@@ -21,8 +21,8 @@ const MarkerClusterGroup = createPathComponent(({}, ctx) => {
   const clusterProps: Record<string, any> = {
     iconCreateFunction: createClusterCustomIcon,
     polygonOptions: {
-      fillColor: "var(--accent-a10)",
-      color: "var(--accent-10)",
+      fillColor: "#732F2f",
+      color: "#732F2f",
       weight: 2,
       opacity: 1,
     },
