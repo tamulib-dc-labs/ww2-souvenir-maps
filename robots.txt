@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://tamulib-dc-labs.github.io/sesquicentennial-planning
+Host: https://tamulib-dc-labs.github.io/ww2-souvenir-maps
 
 # Sitemaps
-Sitemap: https://tamulib-dc-labs.github.io/sesquicentennial-planning/sitemap.xml
+Sitemap: https://tamulib-dc-labs.github.io/ww2-souvenir-maps/sitemap.xml
