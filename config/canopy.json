@@ -1,11 +1,10 @@
 {
-  "collection": "https://markpbaggett.github.io/static_iiif/collections/sesquicentennial.json",
-  "devCollection": "https://markpbaggett.github.io/static_iiif/collections/sesquicentennial.json",
+  "collection": "https://markpbaggett.github.io/corpora-service-maps/collections/collection.json",
+  "devCollection": "https://markpbaggett.github.io/corpora-service-maps/collections/collection.json",
   "featured": [
-    "https://markpbaggett.github.io/static_iiif/manifests/sesquicentennial/2884840973_2b6f8af4fd_o.json",
-    "https://markpbaggett.github.io/static_iiif/manifests/sesquicentennial/2899301462_0f424ddccc_o.json"
+    "https://markpbaggett.github.io/corpora-service-maps/manifests/66d0d20cec007cec424f61c6.json"
   ],
-  "metadata": ["Date", "Building Name", "Coordinates"],
+  "metadata": ["unit", "id"],
   "theme": {
     "defaultTheme": "light",
     "accentColor": "red",
